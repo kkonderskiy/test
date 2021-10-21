@@ -1,0 +1,284 @@
+html { 
+    font-family: Roboto, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: rgb(207, 23, 23);
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.contant{
+    margin: 0 auto;
+    width: 80%;
+}
+
+/*Header*/
+
+
+.header{
+    width: 100%;
+    
+    height: 75px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.header-container{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.present{
+    display: flex;
+}
+
+.present p{
+    margin-left: 30px;
+}
+
+.contacts-container{
+    width: 50%;
+    margin-right: 5px;
+}
+
+.header-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    width: 100%;
+    height: 60px;
+}
+
+.nav-container{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-ul{
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*MAIN*/
+
+.welcome{
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.swiper-wrapper{
+    height: 450px;
+    
+}
+.swiper-wrapper-img{
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    
+}
+
+.photo-panel{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    right: 40px;
+    bottom: 25px;
+    z-index: 3;
+}
+
+.point-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 120px;
+    height: 20px;
+    margin-right: 25px;
+}
+
+.point{
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: cyan;
+}
+.point:hover{
+    background-color: rgb(165, 78, 95);
+}
+
+.point-activ{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background-color: crimson;
+}
+
+.photo-panel-right{
+    display: flex;
+}
+
+.slider-left{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 15px;
+    border: none;
+}
+
+.slider-right{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+}
+
+.slider-right:hover, .slider-left:hover{
+    opacity: .75;
+
+}
+/*PIZZA*/
+.pizza{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pizza-contant{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pizza-container{
+    width: calc(33% - 10px);
+    height: 600px;
+    margin: 5px;
+}
+
+.pizza-photo{
+    width: 100%;
+}
+.pizza-photo img{
+    width: 100%;
+    height: auto;
+}
+
+.pizza-name{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 7px 0;
+    color:  #333;
+}
+
+.pizza-ingridiens{
+    height: auto;
+    font-size: 14px;
+    color:  #777;
+}
+
+.pizza-size{
+    margin: 25px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(218, 216, 216);
+}
+
+.pizza-input{
+    display: none;
+}
+
+.pizza-label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35%;
+    width: 33%;
+    height: 30px;
+    border: 1px solid #000;
+}
+
+.pizza-input:checked+.pizza-label{
+    background-color: #7f7f7f;
+}
+.pizza-label:hover{
+    background-color: #8f8f8f;
+}
+.buy{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 60%;
+    background-color: green;
+    border-radius: 35%;
+}
+.buy:hover{
+    background-color: rgb(3, 82, 3);
+}
+.pizza-buy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*FOOTER*/
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #6f6f6f;
+}
+
+.footer-container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-icon:hover{
+    background-color: darkcyan;
+    border-radius: 50%;
+}
