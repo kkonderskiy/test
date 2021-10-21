@@ -114,7 +114,8 @@ a:hover{
     position: absolute;
     display: flex;
     align-items: center;
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     right: 40px;
     bottom: 25px;
     z-index: 3;
@@ -318,4 +319,21 @@ a:hover{
         width: 100%;
         justify-content: space-between;
     }
+}
+@media (max-width:450px){
+
+    .photo-panel{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        max-width: 150px;
+        flex-wrap: wrap;
+        width: 100%;
+        right: calc(25%-10px);
+        
+        bottom: 20px;
+        z-index: 3;
+    }
+    
+
 }
