@@ -65,11 +65,11 @@ a:hover{
 
 .nav{
     width: 100%;
-    height: 60px;
+    
 }
 
 .nav-container{
-    height: 60px;
+    margin: 10px 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -82,6 +82,14 @@ a:hover{
     align-items: center;
 }
 
+
+.nav-ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+}
 /*MAIN*/
 
 .welcome{
@@ -183,11 +191,13 @@ a:hover{
 .pizza-contant{
     display: flex;
     flex-wrap: wrap;
+
 }
 .pizza-container{
     width: calc(33% - 10px);
-    height: 600px;
+    
     margin: 5px;
+    margin-bottom: 40px;
 }
 
 .pizza-photo{
@@ -281,4 +291,31 @@ a:hover{
 .footer-icon:hover{
     background-color: darkcyan;
     border-radius: 50%;
+}
+
+@media (max-width:1000px){
+    .nav-ul{
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    
+    .header-ul{
+        display: none;
+    }
+
+    .pizza-container{
+        width: calc(100% - 20px);
+        
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .pizza img{
+        width: 50%;
+    }
+    .present{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
